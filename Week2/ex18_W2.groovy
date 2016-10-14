@@ -20,3 +20,5 @@ while (num>0){
 
 println str + " iterations gave result of " + result + " for pi"
 
+// for 3.14 = 331 iterations
+// for 3.141592653 it took 58224164 iterations

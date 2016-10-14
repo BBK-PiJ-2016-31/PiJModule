@@ -1,3 +1,6 @@
+// for 3.14 = 331 iterations
+// for 3.141592653 it took 58224164 iterations
+
 
 print "Enter value of pi to know how many iterations it would take: "
 String str = System.console().readLine()
