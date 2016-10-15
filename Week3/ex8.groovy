@@ -1,3 +1,4 @@
+print "Enter your text: "
 String str = System.console().readLine()
 
 for (int i=0; i<str.length(); i++){
