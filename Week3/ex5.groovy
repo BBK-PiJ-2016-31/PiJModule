@@ -2,42 +2,45 @@ class Point {
 	double x
 	double y
 }
-void assignCordinate( Point current) {	// As for user input for the given point
-	print "Please enter 'x' coordinate: "
-	String str = System.console().readLine()
-	current.x = Double.parseDouble(str)
-	print "Please enter 'y' coordinate: "
-	str = System.console().readLine()
-	current.y = Double.parseDouble(str)
+
+class Rectangle{
+	Point upLeft = new Point()				// Need to initialise the points to avoid error (nullpointer)
+	Point downRight = new Point()
 }
- double getDistance(Point A, Point B) {	// return the distance as per the given formula between two points
- 	return (Math.sqrt (((A.x-B.x) * (A.x-B.x)) + ((A.y-B.y) * (A.y-B.y))))
- }
 
- Point A = new Point()
- assignCordinate(A)
- Point B = new Point()
- assignCordinate(B)
- Point C = new Point()
- assignCordinate(C)
+void assignCordinate( Rectangle current) {	// Get entire rectangle then assign co-ordinates
+	print "Please enter upper left 'x' coordinate: "
+	String str = System.console().readLine()
+	current.upLeft.x = Double.parseDouble(str)
 
- double ab = getDistance (A,B)
- println "Distance from A to B is: " + ab
- double bc = getDistance (B,C)
- println "Distance from B to C is: " + bc
- double ca = getDistance (C,A)
- println "Distance from C to A is: " + ca
+	print "Please enter upper left 'y' coordinate: "
+	str = System.console().readLine()
+	current.upLeft.y = Double.parseDouble(str)
 
- if (ab<bc) {  
- 	if (ab<ca){
- 		println "Distance from A to B is the shortest" 
- 	} else {
- 		println "Distance from C to A is the shortest"  			
- 	}
- } else {
- 	if (bc<ca) {
- 		println "Distance from B to C is the shortest" 
- 	} else {
-	 	println "Distance from C to A is the shortest"	
- 	}
- }
+	print "Please enter down right 'x' coordinate: "
+	str = System.console().readLine()
+	current.downRight.x = Double.parseDouble(str)
+
+	print "Please enter down right 'y' coordinate: "
+	str = System.console().readLine()
+	current.downRight.y = Double.parseDouble(str)
+}
+
+double getParameter (Rectangle current){						// Seperate function for calculations.
+	double result = 2 * (current.downRight.x - current.upLeft.x)	// both sides are equal lengths of a rectangle to * 2
+	result +=  (2 * (current.upLeft.y - current.downRight.y))		// Add it to the result, same for the other two sides
+	return result
+}
+
+double getArea (Rectangle current){
+	double result = (current.downRight.x - current.upLeft.x)	// Side x side = area. No need to times by 2 here.
+	result *=  (current.upLeft.y - current.downRight.y)
+	return result
+}
+
+Rectangle A = new Rectangle()
+println " Please assign the coordinates -"
+assignCordinate(A)
+
+println " *** Parameter *** : " + (getParameter(A))		// Print the result directly by showing the return value of the functions
+println " ***    Area   *** : " + (getArea(A))
