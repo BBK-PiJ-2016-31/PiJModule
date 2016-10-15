@@ -15,10 +15,13 @@ void assignCordinate( Point current) {	// As for user input for the given point
  }
 
  Point A = new Point()
+ println " Enter details of the first coordinate"
  assignCordinate(A)
  Point B = new Point()
+ println " Enter details of the second coordinate"
  assignCordinate(B)
  Point C = new Point()
+ println " Enter details of the third coordinate"
  assignCordinate(C)
 
  double ab = getDistance (A,B)
