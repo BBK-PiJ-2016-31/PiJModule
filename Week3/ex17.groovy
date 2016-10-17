@@ -18,6 +18,8 @@ while (step<4) {
 			readSendEmailMessage()
 			step=0			// So we don;t print OK in the last step
 			valid = true	// so we can reset step back to 1 below
+		} else {
+			println "Invalid command."	
 		}
 	}
 	if (valid) { 
