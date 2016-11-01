@@ -22,7 +22,47 @@ public class Matrix{
 		}
 	}
 
+	public void setRow(int row, String value){
+		int counter=0;
+		if (row<=this.row){
+			for (String val: value.split(",")){
+				counter++;
+			}
+			if (counter==this.column){
+				counter=0;
+				for (String val: value.split(",")){
+					array [row][counter] = Integer.parseInt(val);
+					counter++;
+				}
+				print();
+//			} else {
+//				System.out.println (" More columns than expected ");
+			}
+		}
+	}
 
+	public void setColumn(int column, String value){
+		int counter=0;
+		if (column<=this.column){
+			for (String val: value.split(",")){
+				counter++;
+			}
+			if (counter==this.row){
+				counter=0;
+				for (String val: value.split(",")){
+					array [counter][column] = Integer.parseInt(val);
+					counter++;
+				}
+//				print();
+//			} else {
+//				System.out.println (" More columns than expected ");
+			}
+		}
+	}
+
+	public toString(){
+		
+	} 
 	public void print(){
 		for (int i=0 ; i<row ; i++){
 			for (int j=0 ; j<column ; j++){
