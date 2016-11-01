@@ -1,1 +1,1 @@
-Matrix abc = new Matrix();
+Matrix abc = new Matrix(3,3);
