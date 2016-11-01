@@ -3,18 +3,21 @@ public class ArrayChecker{
 
 	}
 
-	public static void main (String[] args){
-
-	}
-
 	public boolean isSymetrical (int[] array){
-		private int store1;
-		private boolean upDown = false;
-		for (int i=0 ; i<array.length ; i++) {
-			int store1 = array[i];
-			if (i==0) then {continue;} //go back to NEXT for loop iteration - Don't execute below
-
+		boolean symetrical = true;
+		for (int i=0 ; i<array.length/2 ; i++){
+			if (array[i]!= array[array.length-i-1] ) {
+				symetrical=false;
+			}
 		}
+		return symetrical;
 	}
 
+	public int[] reverse(int[] check){
+		int[] reverseArray = check;
+		for (int i=0; i<check.length; i++){
+			reverseArray[i]=check[check.length-i-1];
+		}
+		return reverseArray;
+	} 
 }
