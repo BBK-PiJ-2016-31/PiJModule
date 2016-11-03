@@ -10,15 +10,11 @@ public class Matrix{
 				array [i][j] =1;
 			}
 		}
-//		print();
 	}
 
 	public void setElement(int row, int column, int value){
 		if ((row<=this.row) && (column<=this.column)) {
 			array[row][column]=value;
-//			print();
-//		}else {
-//			System.out.println ("** Position out of bounds **");
 		}
 	}
 
@@ -34,9 +30,6 @@ public class Matrix{
 					array [row][counter] = Integer.parseInt(val);
 					counter++;
 				}
-				print();
-//			} else {
-//				System.out.println (" More columns than expected ");
 			}
 		}
 	}
@@ -53,37 +46,34 @@ public class Matrix{
 					array [counter][column] = Integer.parseInt(val);
 					counter++;
 				}
-//				print();
-//			} else {
-//				System.out.println (" More columns than expected ");
 			}
 		}
 	}
 
-	public String[] toString(){
-		String[] result;
+	public String toString(){
+		String result;
+		result = "[";
 		for (int i=0 ; i<row ; i++){
 			for (int j=0 ; j<column ; j++){
 				result += array[i][j];
 				if (j!=column-1){
-					result +=",";
-				}
-				if (i!=row-1){
-					result += ";";
+					result+=",";
 				}
 			}
+			if (i!=row-1){
+					result+=";";
+				}
 		}
-		result+="]";
+		result += "]";
 		return result;
 	} 
 
-	public void print(){
-		for (int i=0 ; i<row ; i++){
-			for (int j=0 ; j<column ; j++){
-				System.out.print ("Array["+i+"]["+j+"]="+ array[i][j]+"  ");
+	public void prettyPrint(){
+		for (int i=0;i<row;i++) {
+			for (int j=0; j<column;j++){
+				System.out.print (array[i][j] + "\t");
 			}
-			System.out.println("");
+			System.out.println ("");
 		}
 	}
-
 }
