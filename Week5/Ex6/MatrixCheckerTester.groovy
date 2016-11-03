@@ -5,4 +5,4 @@ int[][] check3 = [[1,2,3],[0,5,6],[0,0,9]]
 
 // println (abc.isSymmetrical(check1));
 //println (abc.isSymmetrical(check2));
-println (abc.isSymmetrical(check3));
+println (abc.isTriangular(check3));
