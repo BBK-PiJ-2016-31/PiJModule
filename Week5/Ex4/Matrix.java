@@ -60,9 +60,23 @@ public class Matrix{
 		}
 	}
 
-	public toString(){
-		
+	public String[] toString(){
+		String[] result;
+		for (int i=0 ; i<row ; i++){
+			for (int j=0 ; j<column ; j++){
+				result += array[i][j];
+				if (j!=column-1){
+					result +=",";
+				}
+				if (i!=row-1){
+					result += ";";
+				}
+			}
+		}
+		result+="]";
+		return result;
 	} 
+
 	public void print(){
 		for (int i=0 ; i<row ; i++){
 			for (int j=0 ; j<column ; j++){
