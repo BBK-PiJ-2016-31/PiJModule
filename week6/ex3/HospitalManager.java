@@ -16,7 +16,9 @@ public class HospitalManager {
 			current = current.getNextPatient();
 		}
 		current.setNextPatient(newPatient);		// add it to that patient
+//		System.out.println ("C.Next: "+current.getNextPatient().getName());
 		newPatient.setPreviousPatient(current);
+//		System.out.println ("N.Previous: "+newPatient.getPreviousPatient().getName());
 	}
 	
 	public boolean deletePatient(String name) {
@@ -31,6 +33,7 @@ public class HospitalManager {
 			} else {									// else remove pointer from first patient
 				firstPatient = firstPatient.getNextPatient();	// assign it to next patient
 				firstPatient.setPreviousPatient(null); // make previous patient null
+				System.out.println("FP: "+firstPatient.getName());
 			}
 			numberOfPatients--;		// reduce count as patient is deleted sucessfully
 			return true;
@@ -40,11 +43,11 @@ public class HospitalManager {
 		while (current.getNextPatient() != null) {	// if there is a next patient
 			if (current.getNextPatient().getName().equals(name)){
 				if (current.getNextPatient().getNextPatient()!=null){
-					current.setNextPatient(current.getNextPatient().getNextPatient());	// realign pointer to the next one
 					current.getNextPatient().getNextPatient().setPreviousPatient(current);
+					current.setNextPatient(current.getNextPatient().getNextPatient());	// realign pointer to the next one
 				} else {
-					current.setNextPatient(null);
 					current.getNextPatient().setPreviousPatient(null);
+					current.setNextPatient(null);
 				}
 				numberOfPatients--;
 				return true;

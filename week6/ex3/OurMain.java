@@ -17,25 +17,25 @@ public class OurMain {
 		
 		hospital.addPatient(one);
 		hospital.addPatient(two);
-		hospital.addPatient(three);
-		hospital.addPatient(four);
-		hospital.addPatient(five);
-		hospital.addPatient(six);
-		hospital.addPatient(seven);
-		hospital.addPatient(eight);
+		// hospital.addPatient(three);
+		// hospital.addPatient(four);
+		// hospital.addPatient(five);
+		// hospital.addPatient(six);
+		// hospital.addPatient(seven);
+		// hospital.addPatient(eight);
 		hospital.addPatient(nine);
 		hospital.addPatient(ten);
 		
 		hospital.printRecords();
-		System.out.println("Patients:"+ hospital.getNumberOfPatients());
+	//	System.out.println("Patients:"+ hospital.getNumberOfPatients());
 
-		hospital.deletePatient("One");
-		hospital.printRecords();
-		System.out.println("Patients:"+ hospital.getNumberOfPatients());
+		 hospital.deletePatient("One");
+		 hospital.printRecords();
+		 System.out.println("Patients:"+ hospital.getNumberOfPatients());
 
-		hospital.deletePatient("Nine");
-		hospital.printRecords();
-		System.out.println("Patients:"+ hospital.getNumberOfPatients());
+		 hospital.deletePatient("Nine");
+		 hospital.printRecords();
+		 System.out.println("Patients:"+ hospital.getNumberOfPatients());
 
 	}
 	
