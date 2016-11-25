@@ -14,27 +14,30 @@ public class OurMain {
 		Patient eight = new Patient("Eight",17,"ABC3");
 		Patient nine = new Patient("Nine",18,"ABC4");
 		Patient ten = new Patient("Ten",19,"ABC5");
+		Patient eleven = new Patient("Eleven",19,"ABC");
 		
 		hospital.addPatient(one);
 		hospital.addPatient(two);
-		// hospital.addPatient(three);
-		// hospital.addPatient(four);
-		// hospital.addPatient(five);
-		// hospital.addPatient(six);
-		// hospital.addPatient(seven);
-		// hospital.addPatient(eight);
+		hospital.addPatient(three);
+		hospital.addPatient(four);
+		hospital.addPatient(five);
+		hospital.addPatient(six);
+		hospital.addPatient(seven);
+		hospital.addPatient(eight);
 		hospital.addPatient(nine);
 		hospital.addPatient(ten);
+		hospital.addPatient(eleven);
+		
 		
 		hospital.printRecords();
 	//	System.out.println("Patients:"+ hospital.getNumberOfPatients());
 
-		 // hospital.deletePatient("One");
-		 // hospital.printRecords();
+		  hospital.deletePatient("Two");
+		  //hospital.printRecords();
 		 // System.out.println("Patients:"+ hospital.getNumberOfPatients());
-
-		 // hospital.deletePatient("Nine");
-		 // hospital.printRecords();
+		  hospital.deletePatient("Ten");
+		  hospital.deletePatient("Nine");
+		  hospital.printRecords();
 		 // System.out.println("Patients:"+ hospital.getNumberOfPatients());
 
 	}

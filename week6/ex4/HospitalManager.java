@@ -33,27 +33,26 @@ public class HospitalManager {
 				firstPatient = null;
 			} else {									// else remove pointer from first patient
 				Patient lastPatient = getLastPatient();
+				lastPatient.setNextPatient(firstPatient.getNextPatient());
 				firstPatient = firstPatient.getNextPatient();	// assign it to next patient
-				lastPatient.setNextPatient(firstPatient);
 			}
 			numberOfPatients--;		// reduce count as patient is deleted sucessfully
 			return true;
 		}
 		///////////////////////////need fix
 		current = firstPatient;		// else load the first Patient 
-		while (current.getNextPatient() != firstPatient) {	// false on last element
-			if (current.getNextPatient().getName().equals(name)){
-				if (current.getNextPatient().getNextPatient()!=null){
-					current.setNextPatient(current.getNextPatient().getNextPatient());	// realign pointer to the next one
-				} else {
-					current.setNextPatient(null);
-				}
+		while (current.getNextPatient() != firstPatient) {	// reached end of list
+			if (current.getNextPatient().getName().equals(name)){ // check if this is the one
+				current.setNextPatient(current.getNextPatient().getNextPatient());
 				numberOfPatients--;
 				return true;
 			}
 			current = current.getNextPatient();
 		}
+		// if ((current.getNextPatient()==firstPatient) && (current.getNextPatient().getName().equals(name))){
 
+		// }
+		if (!done) {System.out.println("Record Not Found for : "+name);}
 		return done;
 	}
 	
@@ -70,7 +69,7 @@ public class HospitalManager {
 	}
 
 	public void printRecords(){
-		if (firstPatient == null) {
+		if (firstPatient == null) {	// nothing exists
 			System.out.println("No Records to Print!");
 			return;
 		}
