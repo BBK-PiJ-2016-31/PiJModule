@@ -28,7 +28,6 @@ public class OurMain {
 		hospital.addPatient(ten);
 		hospital.addPatient(eleven);
 		
-		
 		hospital.printRecords();
 	//	System.out.println("Patients:"+ hospital.getNumberOfPatients());
 
