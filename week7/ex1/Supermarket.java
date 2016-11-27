@@ -1,9 +1,18 @@
-public class Queue {
-	private Node firstNode=null;
-	private Node currentNode=null;
+public class Supermarket implements PersonQueue {
+
+	private Person firstPerson=null;
+	private Person currentNode=null;
 	private int queueSize=0;
 
-	public void insert(int value){
+	public void insert(Person person){
+
+	}
+
+	public Person retreive(){
+
+	}
+	
+	public void addPerson(Person person){
 		Node newNode = new Node(value);
 		System.out.println("Inserting request: "+value+" ...");
 		queueSize++;
