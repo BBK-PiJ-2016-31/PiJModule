@@ -1,4 +1,4 @@
-public class StackImplementer<T extends Number> implements Stack<T>{
+public class StackImplementer<T> implements Stack<T>{
 	public StackNode<T> head=null;
 
 	public T pop(){

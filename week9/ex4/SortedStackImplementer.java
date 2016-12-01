@@ -15,8 +15,8 @@ public class SortedStackImplementer<T extends Number> extends StackImplementer<T
 		int lastDifference=1000;
 
 		while (position!=null){
-			if (object>position.getValue()){
-// prblem line				currentDifference=object-lastDifference;
+			if (object>position.getValue()){ // error line
+				currentDifference=object-position.getValue();
 				if (position==head){lastDifference=currentDifference;}
 				if (currentDifference<lastDifference){
 					lastDifference=currentDifference;

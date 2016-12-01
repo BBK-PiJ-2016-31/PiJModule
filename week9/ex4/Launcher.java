@@ -4,7 +4,7 @@ public class Launcher{
 		launcher.launch();
 	}
 	public void launch(){
-		StackImplementer<Integer> s = new StackImplementer<Integer>();
+		SortedStackImplementer<Integer> s = new SortedStackImplementer<Integer>();
 		s.push(1);
 		s.push(2);
 		s.push(3);
