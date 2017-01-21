@@ -14,7 +14,7 @@ public class Node {		// no methods so keep everything public
 		return nextNode;
 	}
 
-	public void setNextNode(Node n){
-		nextNode=n;
+	public void setNextNode(Node nextNode){
+		this.nextNode=nextNode;
 	}
 }

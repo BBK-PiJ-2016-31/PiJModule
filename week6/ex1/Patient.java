@@ -5,8 +5,7 @@ public class Patient {
 	private String illness;
 	private Patient nextPatient;		// Patient details
 	
-	public Patient(String name, int age, String illness) { // initialisation
-		this.name = name;
+	public Patient(String name, int age, String illness) { // initialise data in constructor
 		this.age = age;
 		this.illness = illness;
 		this.nextPatient = null; // Pointer to another patient!
