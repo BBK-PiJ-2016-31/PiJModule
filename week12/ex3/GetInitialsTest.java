@@ -8,6 +8,6 @@ public class GetInitialsTest {
 		String input = "Dereck Robert Yssirt"; 
 		String output = p.getInitials(input); 
 		String expected = "DRY"; 
-		assertEquals(output, expected);
+		assertEquals(String.format("%S Came back, %S was expected",output, expected),output,expected);
 	} 
 }
