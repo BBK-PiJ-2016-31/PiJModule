@@ -5,8 +5,8 @@ public class ErrorUserInput{
 	}
 
 	public void launch(){
-		int count=0;
-		int[] numbers=new int[10];
+		int count=0;						// counter to count the values
+		int[] numbers=new int[10];			// array to store values
 		int avg=0;
 		while (count<10){
 			try{
