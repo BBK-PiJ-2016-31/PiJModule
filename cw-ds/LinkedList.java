@@ -1,4 +1,4 @@
-package com.damanjit;
+
 
 public class LinkedList implements List {
 

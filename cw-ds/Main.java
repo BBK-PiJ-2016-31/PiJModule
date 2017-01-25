@@ -1,4 +1,3 @@
-package com.damanjit;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.damanjit;
+
 /**
  * A sampleable list can be sampled.
  *

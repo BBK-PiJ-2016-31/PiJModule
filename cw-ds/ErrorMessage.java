@@ -1,4 +1,4 @@
-package com.damanjit;
+
 public enum ErrorMessage {
     /**
      * No error. 

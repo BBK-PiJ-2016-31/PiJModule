@@ -1,4 +1,4 @@
-package com.damanjit;
+
 public class ReturnObjectImpl implements ReturnObject {
 
     private ErrorMessage errorMessage=null;

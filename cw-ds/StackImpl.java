@@ -1,5 +1,3 @@
-package com.damanjit;
-
 /**
  * Created by D on 29/12/2016.
  */
