@@ -6,6 +6,11 @@
 public class ImprovedStackImpl implements ImprovedStack {
 
     private List list;
+    /**
+    *Default constructor to initialise the List.
+    *Creates a new ArrayList if the parameter is Null Object. 
+    *Takes List as a parameter.
+    */
 
     public ImprovedStackImpl(List list){
         this.list = list;
@@ -14,6 +19,10 @@ public class ImprovedStackImpl implements ImprovedStack {
         }
     }
 
+    /**
+    *Method to get the private list.
+    *@return List
+    */
     public List getList(){
         return this.list;
     }
