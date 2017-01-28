@@ -4,6 +4,10 @@ public class ReturnObjectImpl implements ReturnObject {
     private ErrorMessage errorMessage=null;
     private Object object=null;
 
+    /**
+    *Default constructors to decide how the object will be wrapped in.
+    * Will be a object with value OR an object with ErrorMesage
+    */
     public ReturnObjectImpl(Object object) {
         this.object=object;
     }

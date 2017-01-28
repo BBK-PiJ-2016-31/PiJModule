@@ -83,6 +83,11 @@ public class LinkedList implements List {
         return (new ReturnObjectImpl(temp.getObject()));
     }
 
+    /**
+    * Method to get the Node.
+    * @return the object node at the given index
+    */
+
     private ObjectNode getObjectNode(int index){
         ObjectNode temp=head;
         do{
@@ -93,6 +98,10 @@ public class LinkedList implements List {
         }while (temp.getNextObjectNode()!=null);
         return temp;
     }
+
+    /**
+    *Sets the index value of the Object Node.
+    */
 
     private void setIndex(ObjectNode temp){
         int counter=temp.getIndex();
@@ -183,6 +192,9 @@ public class LinkedList implements List {
         return (new ReturnObjectImpl(tail.getObject()));
     }
 
+    /**
+    * A print method for checking the code is working.
+    */
     public void printList(){
         if (head==null){
             System.out.println("Nothing to print!!");

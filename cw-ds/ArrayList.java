@@ -6,6 +6,10 @@ public class ArrayList implements List {
     private Object[] objectArray=new Object[arraySize];
     private int nullLocation;
 
+    /**
+    * Default constructor. It initialises the object array base element as null
+    * Assigns null location to keep a track of the null object. 
+    */
     public ArrayList(){
         objectArray[0]=null;
         nullLocation=0;
@@ -112,6 +116,10 @@ public class ArrayList implements List {
         return (new ReturnObjectImpl(item));
     }
 
+    /**
+    * Size checking of the array
+    * if array is full then call the method to make the array bigger
+    */
     private void arraySizeCheck(){
         if (nullLocation==arraySize-1){ // need a bigger array
             makeArrayBigger();
@@ -140,6 +148,10 @@ public class ArrayList implements List {
         return (new ReturnObjectImpl(objectArray[nullLocation-1]));
     }
 
+    /**
+    * Making the array bigger here. twice it's size
+    * if the elements are greater than 10000 then it will increase by 30% size only and not double up.
+    */
     private void makeArrayBigger(){
         if (arraySize>10000){
             arraySize+=(arraySize/30); // increase by 30%
@@ -148,7 +160,9 @@ public class ArrayList implements List {
         }   // we have a new arraySize
         copyArrayContent();
     }
-
+    /**
+    * This method copies the content of the old array to the new array.
+    */
     private void copyArrayContent(){
         // Create a new array
         Object[] temp = new Object[arraySize]; // with a new size
@@ -158,7 +172,10 @@ public class ArrayList implements List {
         objectArray=temp;   // objectArray to take over temp from now
         // we have a bigger array from here on
     }
-
+    
+    /**
+    * Just a print method to check everything is ok!
+    */
     public void printList(){
         if (isEmpty()){
             System.out.println("Nothing to print!! > nullLocation: "+nullLocation);

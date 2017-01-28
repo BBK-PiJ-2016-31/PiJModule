@@ -4,6 +4,7 @@
 public class StackImpl extends AbstractStack {
     /**
      * The data structure where the elements on the stack are stored.
+     * Default constructor
      */
 
     public StackImpl (List list){
