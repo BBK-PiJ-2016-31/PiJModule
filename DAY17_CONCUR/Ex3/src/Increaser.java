@@ -3,7 +3,7 @@
  */
 public class Increaser implements Runnable {
 
-  private final static int LIMIT = 3;
+  private final static int LIMIT = 5;
   private final static int MAX = 1000;
   private Counter c;
 
@@ -26,6 +26,7 @@ public class Increaser implements Runnable {
     for (int i = 0; i < MAX; i++) {
 
       c.increase();
+
     }
     System.out.println("Stopping at " + c.getCount());
   }
