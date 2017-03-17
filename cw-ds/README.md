@@ -1,3 +1,3 @@
 # cw-ds
 Coursework 2 complete.
-LOST COMMIT HISTORY DUE TO INTEGRATION TO AND FROM INTELLIJ
+Lost commit history due to moving in and out from intelliJ. Will take care in 3rd assignment.
