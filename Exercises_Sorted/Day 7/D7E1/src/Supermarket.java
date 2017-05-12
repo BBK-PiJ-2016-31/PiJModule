@@ -4,44 +4,33 @@ public class Supermarket implements PersonQueue {
 	private Person lastPerson=null;
 	private int queueSize=0;
 
+	@Override
 	public void insert(Person person){
-
-	}
-
-	public Person retreive(){
-
-	}
-	
-	public void addPerson(Person person){
-		Node newNode = new Node(value);
-		System.out.println("Inserting request: "+value+" ...");
 		queueSize++;
-		if (firstNode==null){
-			firstNode=newNode;
-			currentNode=newNode;
-		} else{
-			currentNode.setPreviousNode(newNode);
-			currentNode=newNode;
-		}		
+		if (firstPerson==null){
+			firstPerson = person;
+			lastPerson=person;
+		}
+		lastPerson.setNextPerson(person);
+		lastPerson=person;
 	}
 
-	public Integer retrieve(){
-		if (firstNode !=null) {
-			int i = firstNode.getValue();
-			System.out.println("Retreiving request: "+i+" ... done.");
-			queueSize--;
-			if (firstNode!=currentNode){
-				firstNode=firstNode.getPreviousNode();			
-			} else{
-				firstNode=null;
-				currentNode=null;
-			}
-			return i;
-		} else {
-			System.out.println("Nothing to retrieve!");
-		}
-		return null;
+	@Override
+    public Person retrieve(){
+		if (firstPerson==null) return null;
+		queueSize--;
+		Person returnedPerson = firstPerson;
+		firstPerson=firstPerson.getNextPerson();
+		return returnedPerson;
 	}
+
+    public void addPerson (Person p){
+        insert(p);
+    }
+
+    public void servePerson (){
+        retrieve();
+    }
 
 	public int size(){
 		return queueSize;

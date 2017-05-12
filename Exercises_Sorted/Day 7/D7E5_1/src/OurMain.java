@@ -10,6 +10,5 @@ public class OurMain {
 		System.out.println(str.hashCode());
 		int result = HashUtilities.shortHash(str.hashCode());
 		System.out.println(result);
-		
 	}
 }

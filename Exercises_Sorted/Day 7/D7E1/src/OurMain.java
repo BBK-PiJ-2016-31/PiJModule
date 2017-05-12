@@ -1,39 +1,34 @@
 public class OurMain {
 
 	public static void main(String[] args) {
-		Queue i = new Queue();
+		Supermarket market = new Supermarket();
 
-		System.out.println("There are "+i.size()+" requests in the queue.");
-		
-		i.insert (1);
-		i.insert (2);
-		i.insert (3);
-		i.insert (4);
-		i.retrieve();
-		i.retrieve();
-		i.insert (5);
-		i.insert (6);
-		i.insert (7);
-		i.insert (8);
-		i.insert (9);
-		i.insert (10);
-		
-		System.out.println("There are "+i.size()+" requests in the queue.");
+		System.out.println("There are "+market.size()+" people in the queue.");
 
-		i.retrieve();
-		i.retrieve();
-		i.retrieve();
-		i.insert(11);
-		i.retrieve();
-		i.retrieve();
-		i.retrieve();
-		i.retrieve();
-		i.retrieve();
-		i.insert(12);
-		i.retrieve();
-		i.retrieve();
-		i.retrieve();
-		
+		Person one = new Person(1);
+		Person two = new Person(2);
+		Person three = new Person(3);
+		Person four = new Person(4);
+		Person five = new Person(5);
+		Person six = new Person(6);
+		Person seven = new Person(7);
+		Person eight = new Person(8);
+
+		market.insert (one);
+		market.insert (two);
+		market.insert (three);
+		market.insert (four);
+		market.insert (five);
+		market.insert (six);
+		market.insert (seven);
+        market.insert (eight);
+
+        System.out.println("There are "+market.size()+" people in the queue.");
+
+		market.retrieve();
+		market.retrieve();
+		System.out.println("There are "+market.size()+" people in the queue.");
+
 	}
 	
 }
