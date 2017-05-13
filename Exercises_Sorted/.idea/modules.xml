@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DAY 10/D10E1A/D10E1A.iml" filepath="$PROJECT_DIR$/DAY 10/D10E1A/D10E1A.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY 10/D10E1B/D10E1B.iml" filepath="$PROJECT_DIR$/DAY 10/D10E1B/D10E1B.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DAY 11/D11E1.1/D11E1.1.iml" filepath="$PROJECT_DIR$/DAY 11/D11E1.1/D11E1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DAY 11/D11E1.2/D11E1.2.iml" filepath="$PROJECT_DIR$/DAY 11/D11E1.2/D11E1.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DAY 11/D11E1.3/D11E1.3.iml" filepath="$PROJECT_DIR$/DAY 11/D11E1.3/D11E1.3.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY 6/D6E1/D6E1.iml" filepath="$PROJECT_DIR$/DAY 6/D6E1/D6E1.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY 6/D6E10/D6E10.iml" filepath="$PROJECT_DIR$/DAY 6/D6E10/D6E10.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY 6/D6E2/D6E2.iml" filepath="$PROJECT_DIR$/DAY 6/D6E2/D6E2.iml" />
@@ -27,6 +30,9 @@
       <module fileurl="file://$PROJECT_DIR$/DAY 9/D9E4/D9E4.iml" filepath="$PROJECT_DIR$/DAY 9/D9E4/D9E4.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY 9/D9E5/D9E5.iml" filepath="$PROJECT_DIR$/DAY 9/D9E5/D9E5.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY 10/DAY10E2/DAY10E2.iml" filepath="$PROJECT_DIR$/DAY 10/DAY10E2/DAY10E2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DAY 10/DAY10E2_2/DAY10E2_2.iml" filepath="$PROJECT_DIR$/DAY 10/DAY10E2_2/DAY10E2_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DAY 10/DAY10E4/DAY10E4.iml" filepath="$PROJECT_DIR$/DAY 10/DAY10E4/DAY10E4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DAY 10/DAY10E5/DAY10E5.iml" filepath="$PROJECT_DIR$/DAY 10/DAY10E5/DAY10E5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercises_Sorted.iml" filepath="$PROJECT_DIR$/Exercises_Sorted.iml" />
     </modules>
   </component>
