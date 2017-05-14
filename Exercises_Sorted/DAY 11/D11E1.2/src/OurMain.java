@@ -10,6 +10,6 @@ public class OurMain {
         node.add(2);
         node.add(4);
         node.add(5);
-        System.out.println(node.contains(0));
+        node.toString(1);
     }
 }

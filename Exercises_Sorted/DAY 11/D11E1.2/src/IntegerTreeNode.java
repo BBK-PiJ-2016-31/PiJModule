@@ -45,4 +45,41 @@ public class IntegerTreeNode {
             }
         }
     }
+
+    public void toString(int value){
+        IntegerTreeNode pointer=null;
+
+        if (value == this.value) {
+            pointer=this;
+        } else if (value > this.value) {
+            if (right == null) {
+                System.out.println("Value not found");
+                if (pointer == null) System.out.println("Null pointer");
+            } else {
+                right.toString(value);
+            }
+        } else {
+            if (left == null) {
+                System.out.println("Value not found");
+                if (pointer == null) System.out.println("Null pointer");
+
+            } else {
+                left.toString(value);
+            }
+        }
+        if (!(pointer==null)){
+            if (pointer.left!=null){
+                System.out.println("L["+pointer.left.value+"]");
+                toString(pointer.left.value);
+            } else {
+                if (pointer.right!=null){
+                    System.out.println("R["+pointer.right.value+"]");
+                    toString(pointer.right.value);
+                }
+
+            }
+        }
+
+    }
+
 }

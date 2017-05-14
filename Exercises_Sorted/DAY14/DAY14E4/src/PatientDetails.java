@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 public class PatientDetails{
@@ -17,19 +20,23 @@ public class PatientDetails{
 
 	public void registerNew(){
 		Patient newEntry= new Patient();
-		newEntry.name = getName();
-		newEntry.age = getAge(newEntry.name);
+		try {
+			newEntry.name = getName();
+			newEntry.age = getAge(newEntry.name);
+		}catch (IOException e){
+			e.printStackTrace();
+		}
 		details.add(newEntry);
 	}
 
-	public String getName(){
+	public String getName() throws IOException {
 		System.out.print("Enter name of the new patient: ");
-		return (System.console().readLine());		
+		return (new BufferedReader(new InputStreamReader(System.in)).readLine());
 	}
 
-	public int getAge(String name) throws IllegalArgumentException{
+	public int getAge(String name) throws IllegalArgumentException, IOException {
 		System.out.print("Enter "+ name +"'s age: ");
-		String str = System.console().readLine();
+		String str = new BufferedReader(new InputStreamReader(System.in)).readLine();
 		int temp=0;
 		try{
 			temp = Integer.parseInt(str);			
