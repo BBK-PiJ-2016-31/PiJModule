@@ -48,7 +48,7 @@
       <module fileurl="file://$PROJECT_DIR$/DAY14/DAY14E4/DAY14E4.iml" filepath="$PROJECT_DIR$/DAY14/DAY14E4/DAY14E4.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY14/DAY14E6/DAY14E6.iml" filepath="$PROJECT_DIR$/DAY14/DAY14E6/DAY14E6.iml" />
       <module fileurl="file://$PROJECT_DIR$/DAY14/DAY14E7/DAY14E7.iml" filepath="$PROJECT_DIR$/DAY14/DAY14E7/DAY14E7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Exercises_Sorted.iml" filepath="$PROJECT_DIR$/Exercises_Sorted.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exercises_Sorted.iml" filepath="$PROJECT_DIR$/.idea/modules/Exercises_Sorted.iml" />
     </modules>
   </component>
 </project>
